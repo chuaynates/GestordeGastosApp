@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">gestordedatos</string>
+    <array name="tipo_cuenta">
+        <item>Tarjeta de Crédito</item>
+        <item>Ahorro</item>
+        <item>Efectivo</item>
+    </array>
+</resources>

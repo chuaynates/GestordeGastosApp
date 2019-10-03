@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/regis_text"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Registrar Ingresos/Egresos"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Monto"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/opciones"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresos"
+                    android:checked="true"
+                    android:textSize="25sp"/>
+
+                <RadioButton
+                    android:id="@+id/rad2"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Egreso"
+                    android:textSize="25sp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tipo_text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Tipo de Cuenta"
+                android:textSize="15dp" />
+            <Spinner
+                android:id="@+id/spin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/tipo_cuenta"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
